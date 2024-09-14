@@ -1,3 +1,12 @@
+/* Styling for app.tsx */
+
+:root {
+  --theme-white: rgb(255, 255, 255);
+  --theme-black: rgb(24, 28, 28);
+  --theme-green: rgb(28, 255, 134);
+  --color-white: rgb(255, 255, 255);
+}
+
 .App {
   text-align: center;
 }
@@ -13,15 +22,41 @@
   }
 }
 
+/* Header  -------------------------------------- */
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: var(--theme-black);
+  min-height: 5vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: var(--color-white);
+  border-bottom: 1px solid var(--theme-green);
+}
+
+/* Body  -------------------------------------- */
+.App-body {
+  background-color: var(--theme-black);
+  font-size: calc(10px + 2vmin);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 1px solid var(--theme-green);
+  color: var(--color-white);
+  min-height: 100vh;
+}
+
+/* Footer -------------------------------------- */
+.App-footer {
+  background-color: var(--theme-black);
+  font-size: calc(10px + 2vmin);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--color-white);
 }
 
 .App-link {
