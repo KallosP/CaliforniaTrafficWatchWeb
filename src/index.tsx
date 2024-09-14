@@ -7,8 +7,11 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+// React app is injected inside of the root div in html file
 root.render(
+  // StrictMode = more descriptive warning/error messages
   <React.StrictMode>
+    {/* App component (App.tsx) rendered here */}
     <App />
   </React.StrictMode>
 );
